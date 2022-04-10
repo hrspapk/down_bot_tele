@@ -480,9 +480,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot          : TGUploaderPro v7.0\n'
-            start_msg+= 'Desarrollador: @obisoftdev\n'
-            start_msg+= 'Api          : https://github.com/Obysoftt/pyobigram\n'
+            start_msg = 'Bot          : HRSPapk v7.0\n'
+            start_msg+= 'Desarrollador: @Thenkei\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -562,7 +561,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5212402875:AAFSITR_c2eIpwpKB_ERytyPklg1lecdPds'
+    bot_token = '5214862978:AAH6Hvid6jGgpuQOzk4L9XddIQZ71001RF4'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
